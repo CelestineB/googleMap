@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Google Maps Project</title>
+
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div id="map"></div>
+    <div class="title">
+        <h2>Store Locator</h2>
+    </div>
+    <div class="form">
+        <div class="searchBar">
+            <input type="text" id="search-input" placeholder="Enter Zip">
+            <span id="search" onclick="searchStore()"><i class="fa fa-search fa-rotate-90"></i></span>
+        </div>
+        <div class="displayAreas">
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="js/store-data.js"></script>
+
+    <script src="js/index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA&callback=initMap" type="text/javascript"></script>
+
+
+</body>
+
+</html>

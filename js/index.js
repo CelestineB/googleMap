@@ -150,7 +150,11 @@ function setOnclikListener() {
     storeElements.forEach(function(elem, index) {
         elem.addEventListener('click', function() {
             new google.maps.event.trigger(markers[index], 'click');
-
+            const displayAreas = document.querySelector('.displayAreas');
+            displayAreas.style.display = "none";
+            setTimeout(() => {
+                displayAreas.style.display = "block";
+            }, 5000);
 
         });
     });
